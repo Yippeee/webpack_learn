@@ -2,4 +2,8 @@
 // 在这里输入 console.log('Hello world!')，能在浏览器控制台看到打印结果
 
 require('./src/style.css');
+require('./src/style2.css');
 require('./src/main.js');
+if (process.env.NODE_ENV === 'production') {
+  require('./src/index.html');
+}
